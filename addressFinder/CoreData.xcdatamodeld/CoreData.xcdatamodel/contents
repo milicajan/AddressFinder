@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="CoreData">
+    <entity name="Location" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="address" attributeType="String" syncable="YES"/>
+        <attribute name="city" attributeType="String" syncable="YES"/>
+        <attribute name="coordinates" attributeType="Transformable" syncable="YES"/>
+        <attribute name="postal" attributeType="String" syncable="YES"/>
+        <attribute name="state" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Location" positionX="-45" positionY="0" width="128" height="120"/>
+    </elements>
+</model>

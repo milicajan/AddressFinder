@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-Regular.ttf">
+            <string>Oswald-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="addressFinder" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLine" destination="LwK-zW-1EY" id="mOG-NX-kIY"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Y8p-9t-0Am"/>
+                <outlet property="label" destination="vdZ-Kq-EVw" id="fye-p0-gTZ"/>
+                <outlet property="textField" destination="6nx-bn-BNF" id="S4q-Da-9Rb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is mandatory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdZ-Kq-EVw">
+                    <rect key="frame" x="10" y="30" width="64" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="63N-66-G6U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald Regular" pointSize="10"/>
+                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nx-bn-BNF">
+                    <rect key="frame" x="10" y="0.0" width="354" height="30"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DIE-vL-yRO"/>
+                    </constraints>
+                    <color key="textColor" red="0.0" green="0.43921568630000002" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald Regular" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="BZR-8i-aI8"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LwK-zW-1EY">
+                    <rect key="frame" x="0.0" y="26" width="374" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.43921568630000002" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LTv-EJ-NUd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.89411764709999997" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6nx-bn-BNF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2pe-xg-cgk"/>
+                <constraint firstItem="LwK-zW-1EY" firstAttribute="top" secondItem="6nx-bn-BNF" secondAttribute="bottom" constant="-4" id="4zj-SF-SbK"/>
+                <constraint firstItem="vdZ-Kq-EVw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Snm-xy-klI"/>
+                <constraint firstItem="LwK-zW-1EY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W8H-vu-Sli"/>
+                <constraint firstItem="6nx-bn-BNF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Zcx-4J-Am8"/>
+                <constraint firstAttribute="trailing" secondItem="6nx-bn-BNF" secondAttribute="trailing" constant="10" id="asj-38-oIW"/>
+                <constraint firstAttribute="trailing" secondItem="LwK-zW-1EY" secondAttribute="trailing" id="gja-B5-Y5f"/>
+                <constraint firstAttribute="bottom" secondItem="vdZ-Kq-EVw" secondAttribute="bottom" id="k4W-G6-ms3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ogG-BR-MNz"/>
+            <point key="canvasLocation" x="54" y="-185"/>
+        </view>
+    </objects>
+</document>
