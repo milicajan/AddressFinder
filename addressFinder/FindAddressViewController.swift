@@ -185,7 +185,7 @@ class FindAddressViewController: UIViewController, UITextFieldDelegate {
           if let coordonates = results {
             LoadingIndicatorView.hide()
             self?.address = Address(title: address, city: city, state: state, postal: postal, coordinate: CLLocationCoordinate2D(latitude: coordonates.0 , longitude: coordonates.1))
-            print(coordonates)
+            //print(coordonates)
             self?.performSegue(withIdentifier: Identifier.locationSegue, sender: nil)
           } else if let err = error as? URLError {
               LoadingIndicatorView.hide()

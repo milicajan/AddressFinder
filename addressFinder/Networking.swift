@@ -24,7 +24,7 @@ struct Service {
         
                             case .success:
                             let json = JSON(responseData.result.value as Any)
-                            print(json)
+                            //print(json)
                                if (json["candidates"].arrayValue.isEmpty) {
                                  completionHandler(nil, nil)
                                 } else {
